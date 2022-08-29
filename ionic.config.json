@@ -1,0 +1,7 @@
+{
+  "name": "androidblock",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
