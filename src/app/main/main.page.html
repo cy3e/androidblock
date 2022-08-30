@@ -1,35 +1,33 @@
 <ion-header>
   <ion-toolbar>
-    <ion-a href='/'><img className= "logo" src="https://www.inventicons.com/uploads/iconset/158/wm/32/Mobile-Block-88.png" alt=""></ion-a>
-    <ion-title>Phone toolkit</ion-title>
+    <ion-title >
+      Phone toolkit
+    <img className= "logo" class = 'Logo'  src="https://www.inventicons.com/uploads/iconset/158/wm/32/Mobile-Block-88.png" alt="">
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
-  <ion-card>
+  <ion-card (click)='qr()'>
     <ion-item>
-      <ion-icon name="pin" slot="start"></ion-icon>
-      <ion-label>ion-item in a card, icon left, button right</ion-label>
-      <ion-button fill="outline" slot="end">View</ion-button>
+      <ion-icon name="qr-code-outline"></ion-icon>
+      <ion-title>Agregar telefono</ion-title>
     </ion-item>
   
     <ion-card-content>
-      This is content, without any paragraph or header tags,
-      within an ion-card-content element.
+      usa un qr para agregar un dispositivo android nuevo a la lista 
     </ion-card-content>
   </ion-card>
   
-  <ion-card>
+  <ion-card (click)='mngr()'>
     <ion-item>
-      <ion-icon name="pin" slot="start"></ion-icon>
-      <ion-label>ion-item in a card, icon left, button right</ion-label>
-      <ion-button fill="outline" slot="end">View</ion-button>
+      <ion-icon name="hammer-outline"></ion-icon>
+      <ion-title>Administrar telefonos</ion-title>
     </ion-item>
   
     <ion-card-content>
-      This is content, without any paragraph or header tags,
-      within an ion-card-content element.
+      administra los dispositivos android que ya hayas agregado
     </ion-card-content>
   </ion-card>
   

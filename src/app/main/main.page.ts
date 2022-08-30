@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-main',
@@ -7,8 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPage implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) {}
 
+
+  qr() {
+    this.router.navigate(['/qr'])
+  }
+
+  mngr() {
+    this.router.navigate(['/manager'])
+  }
   ngOnInit() {
   }
 
