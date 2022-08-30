@@ -25,3 +25,18 @@
 #container a {
   text-decoration: none;
 }
+
+.codeinput{
+  width: 55%;
+}
+.enterbtn{
+
+  visibility: hidden;
+}
+
+.codeinput:active{
+  .enterbtn{
+    z-index: 4;
+    visibility: visible;
+  }
+}
