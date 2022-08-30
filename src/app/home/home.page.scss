@@ -30,8 +30,10 @@
   width: 55%;
 }
 .enterbtn{
-
-  visibility: hidden;
+  visibility: visible;
+  transform:translateX(250px);
+  height: 10vmin;
+  width: 10vmin;  
 }
 
 .codeinput:active{
