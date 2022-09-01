@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'addform',
     loadChildren: () => import('./addform/addform.module').then( m => m.AddformPageModule)
   },
+  {
+    path: 'tools',
+    loadChildren: () => import('./tools/tools.module').then( m => m.ToolsPageModule)
+  },
 ];
 
 @NgModule({

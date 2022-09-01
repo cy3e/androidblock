@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>tools</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card (click)='qr()'>
+    <ion-item>
+      <ion-icon name="lock-closed-outline"></ion-icon>
+      <ion-title>bloquear</ion-title>
+    </ion-item>
+  
+    <ion-card-content>
+      usa esta opcion para bloquear el dispositivo  
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card (click)='qr()'>
+  <ion-item>
+    <ion-icon name="lock-open-outline"></ion-icon>
+    <ion-title>desbloquear</ion-title>
+  </ion-item>
+
+  <ion-card-content>
+    usa esta opcion para desbloquear el dispositivo  
+  </ion-card-content>
+</ion-card>
+
+   <ion-card (click)='qr()'>
+    <ion-item>
+      <ion-icon name="calendar-outline"></ion-icon>
+      <ion-title>set payday </ion-title>
+    </ion-item>
+  
+    <ion-card-content>
+      usa esta opcion para agregar los dia de paga del dispositivo android 
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card (click)='del()'>
+    <ion-item>
+      <ion-icon name="trash-outline"></ion-icon>
+      <ion-title>delete the app</ion-title>
+    </ion-item>
+  
+    <ion-card-content>
+      borra la applicacion del telefono 
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
