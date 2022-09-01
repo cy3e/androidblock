@@ -2,13 +2,19 @@
   <ion-toolbar>
     <ion-title >
       Phone toolkit
-    <img className= "logo" class = 'Logo'  src="https://www.inventicons.com/uploads/iconset/158/wm/32/Mobile-Block-88.png" alt="">
+      <img className= "logo" class = 'Logo'  src="https://i0.wp.com/www.androidhelpcenter.com/wp-content/uploads/how-to-lock-home-screen.png?fit=26%2C26&ssl=1" alt="">
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
+<br>
+<ion-item>
+  <ion-button [routerLink]="['/home']">
+    <ion-icon name="arrow-back-circle-sharp" slot="start"></ion-icon>
+    Atras
+  </ion-button>
+</ion-item>
+<br>
 <ion-content>
-
   <ion-card (click)='qr()'>
     <ion-item>
       <ion-icon name="qr-code-outline"></ion-icon>
@@ -30,6 +36,4 @@
       administra los dispositivos android que ya hayas agregado
     </ion-card-content>
   </ion-card>
-  
-
 </ion-content>

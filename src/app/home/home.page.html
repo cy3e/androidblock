@@ -1,26 +1,48 @@
+
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
       AndroidBlock
-    <img className= "logo" src="https://www.inventicons.com/uploads/iconset/158/wm/32/Mobile-Block-88.png" alt="">
+      <img className= "logo" class = 'Logo'  src="https://i0.wp.com/www.androidhelpcenter.com/wp-content/uploads/how-to-lock-home-screen.png?fit=26%2C26&ssl=1" alt="">
     </ion-title>
   </ion-toolbar>
 </ion-header>
+
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Blank</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <div id="container">
-    <div className="code">
-      <div className="imputbar">
-        <ion-item>
-          <ion-label position="floating" >Ingrese el Codigo Maestro</ion-label>
-          <ion-input class="codeinput"> <ion-Button class="enterbtn" (click) = "enter()"></ion-Button></ion-input>
-        </ion-item>
-      </div>
-    </div>
-  </div>
+  <br>
+  <br>
+  <br>
+    <ion-grid id="container">
+        <ion-row>
+            <ion-col size-md="4" offset-md="4">
+                <!-- Ionic Card -->
+                <ion-card color="light">
+                    <ion-card-header color="secondary">
+                        <ion-card-title>
+                            Acceso a la App
+                        </ion-card-title>
+                    </ion-card-header>
+                    <br>
+                    <ion-card-content>
+                        <ion-item class="barra-text" margin-vertical>
+                            <ion-label position="floating">Codigo de Acceso</ion-label>
+                            <ion-input type="text" id="productName"></ion-input>
+                        </ion-item>
+                        <br>
+                        <div margin-vertical text-right>
+                            <ion-button class="codeinput" (click) = "enter()">
+                              <ion-icon name="create-sharp"></ion-icon>
+                              Ejecutar
+                            </ion-button>
+                        </div>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-content>

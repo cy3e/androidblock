@@ -6,10 +6,6 @@
   top: 50%;
   transform: translateY(-50%);
 }
-#ion-title{
-  margin-top: 25px;
-  margin-bottom:25px;
-}
 
 #container strong {
   font-size: 20px;
@@ -27,22 +23,6 @@
   text-decoration: none;
 }
 
-.codeinput{
-  width: 55%;
-}
-.enterbtn{
-  visibility: visible;
-  transform:translateX(250px);
-  height: 10vmin;
-  width: 10vmin;  
-}
-
-.Logo{
-  position: relative;
-  top: 10px;
-  margin-top: 10px;
-}
-
 
 .codeinput:active{
   .enterbtn{
@@ -55,8 +35,20 @@
   margin-top: 25px;
   margin-bottom:25px;
 }
+
 .logo{
   position: relative;
   top: 10px;
-  margin-top: 10px;
+  margin-top: 25px;
+}
+
+.Logo{
+  position: relative;
+  top: 5px;
+  margin-top: 7px;
+}
+
+.barra-text{
+  width: 100%;
+  border-radius: 7px;
 }
