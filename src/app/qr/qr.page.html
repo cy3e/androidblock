@@ -6,11 +6,6 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-      <ion-button ()="startScanning()" expand="full">
-       qrscanner
-      </ion-button>
-      <p *ngIf="qrText">QR Scan text: {{ qrText }}</p>
-  </div>
+<ion-content onload = "scan()">
+  <ion-button (click) = "scan()">presione mi loko</ion-button>>
 </ion-content>

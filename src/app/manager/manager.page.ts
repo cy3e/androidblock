@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-manager',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ManagerPage implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
   }
 
+  tools(){
+    this.router.navigate(['/tools'])
+  } 
 }
