@@ -14,9 +14,9 @@ export class HomePage {
 
   async err(){
     const alert = await this.alertCtrl.create({
-      header: "hubo un problema",
-      message: "el codigo maestro es erroneo",
-      buttons: ['entendido']
+      header: "Hubo un problema",
+      message: "El Codigo Maestro no es correcto",
+      buttons: ['Entendido']
     });
     await alert.present();
   }

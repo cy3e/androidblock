@@ -7,12 +7,14 @@
   </ion-toolbar>
 </ion-header>
 <br>
-<ion-item>
-  <ion-button [routerLink]="['/home']">
-    <ion-icon name="arrow-back-circle-sharp" slot="start"></ion-icon>
-    Atras
-  </ion-button>
-</ion-item>
+<ion-card>
+  <ion-item>
+    <ion-button [routerLink]="['/home']">
+      <ion-icon name="arrow-back-circle-sharp" slot="start"></ion-icon>
+      Atras
+    </ion-button>
+  </ion-item>
+</ion-card>
 <br>
 <ion-content>
   <ion-card (click)='qr()'>
