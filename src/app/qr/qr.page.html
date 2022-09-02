@@ -7,5 +7,11 @@
 </ion-header>
 
 <ion-content >
+  <ion-item>
+    <ion-button [routerLink]="['/main']">
+      <ion-icon name="arrow-back-circle-sharp" slot="start"></ion-icon>
+      Atras
+    </ion-button>
+  </ion-item>
   <ion-button (click)="barcodeScanner()">presione mi loko</ion-button>
 </ion-content>
