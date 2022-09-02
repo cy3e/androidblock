@@ -21,7 +21,7 @@ export class ToolsPage implements OnInit {
     const alert = await alertController.create({
       message: 'usted esta deacuerdo con borrar todo rastro de la applicacion del telefono'
       + ' * ' + 'esta accion no se puede deshacer' +' * ',
-      buttons: ['estoy de acuerdo']
+      buttons: ['estoy de acuerdo','cancelar']
     });
 
     await alert.present();
