@@ -12,7 +12,7 @@ export class HomePage {
 
   constructor(public alertCtrl: AlertController, private router:Router) {}
 
-  async alert(){
+  async err(){
     const alert = await this.alertCtrl.create({
       header: "hubo un problema",
       message: "el codigo maestro es erroneo",
@@ -22,8 +22,16 @@ export class HomePage {
   }
 
   enter() {
-    this.router.navigate(['/main'])
-  }
+   
+    const input = document.getElementById('codigomaestro') as HTMLInputElement | null;
+    const code = input?.value;
 
+    if (code == '1234') {
+      this.router.navigate(['main'])
+    }
+   else {
+    this.err()
+   }
+  }
 
 }
