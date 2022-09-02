@@ -1,25 +1,34 @@
 import { Component, OnInit } from '@angular/core';
-import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
+import { ZBarOptions, ZBar } from '@ionic-native/zbar/ngx';
+
 @Component({
   selector: 'app-qr',
   templateUrl: './qr.page.html',
   styleUrls: ['./qr.page.scss'],
 })
 export class QrPage implements OnInit {
-  
-  code:any;
-  constructor( public BarcodeScanner: BarcodeScanner){}
-
+    
+  optionZbar:any;
+  scannedOutput:any;
+  constructor(
+    private zbarPlugin: ZBar
+  ) {
+    this.optionZbar = {
+      flash: 'off',
+      drawSight: false
+    }
+  }
   ngOnInit(){}
 
 
-  scan(){
-    this.BarcodeScanner.scan().then(BarcodeData => {
-      this.code = BarcodeData;
-      console.log(BarcodeData);
-    }).catch (e => {
-      console.log('Error:'+Error);
-    });
+  barcodeScanner(){
+    this.zbarPlugin.scan(this.optionZbar)
+   .then(respone => {
+      console.log(respone);
+      this.scannedOutput = respone;
+   })
+   .catch(error => {
+      alert(error);
+   });
   }
-  
 }
