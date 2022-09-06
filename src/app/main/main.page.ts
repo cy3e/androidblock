@@ -13,7 +13,7 @@ export class MainPage implements OnInit {
 
 
   qr() {
-    this.router.navigate(['/qr'])
+    this.router.navigate(['/token'])
   }
 
   mngr() {

@@ -21,17 +21,18 @@ export class HomePage {
     await alert.present();
   }
 
-  enter() {
-   
-    const input = document.getElementById('codigomaestro') as HTMLInputElement | null;
-    const code = input?.value;
+  onKeydown(event) {
+      if(event.key === "Enter")
+      {
+        const input = document.getElementById('codigomaestro') as HTMLInputElement | null;
+        const code = input?.value;
 
-    if (code == '1234') {
-      this.router.navigate(['main'])
+        if (code == '1234') {
+          this.router.navigate(['main'])
+        }
+        else {
+          this.err()
+        }
+      }
     }
-   else {
-    this.err()
-   }
-  }
-
 }

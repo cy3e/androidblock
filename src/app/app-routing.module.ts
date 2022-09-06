@@ -16,10 +16,6 @@ const routes: Routes = [
     loadChildren: () => import('./main/main.module').then( m => m.MainPageModule)
   },
   {
-    path: 'qr',
-    loadChildren: () => import('./qr/qr.module').then( m => m.QrPageModule)
-  },
-  {
     path: 'manager',
     loadChildren: () => import('./manager/manager.module').then( m => m.ManagerPageModule)
   },
@@ -30,7 +26,11 @@ const routes: Routes = [
   {
     path: 'tools',
     loadChildren: () => import('./tools/tools.module').then( m => m.ToolsPageModule)
+  },  {
+    path: 'token',
+    loadChildren: () => import('./token/token.module').then( m => m.TokenPageModule)
   },
+
 ];
 
 @NgModule({
