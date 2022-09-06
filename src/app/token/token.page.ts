@@ -20,6 +20,9 @@ export class TokenPage implements OnInit {
   onKeydown(event) {
     if (event.key === "Enter") {
       console.log(codigo);
+      //make the get-data from phone
+
+      //make insert data from the get to managment
     }
   }
 
