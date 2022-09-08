@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>token</ion-title>
+    <ion-title>Token</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -10,6 +10,12 @@
       <ion-title size="large">Blank</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-item>
+    <ion-button [routerLink]="['/main']">
+      <ion-icon name="arrow-back-circle-sharp" slot="start"></ion-icon>
+      Atras
+    </ion-button>
+  </ion-item>
   <br>
   <br>
   <br>
@@ -21,7 +27,7 @@
                     <br>
                     <ion-card-content>
                         <ion-item class="barra-text" margin-vertical>
-                            <ion-label position="floating">ingrese el token popular</ion-label>
+                            <ion-label position="floating">Ingrese el Token Popular</ion-label>
                             <ion-input type="text" id="token" (keydown.enter)="onKeydown($event)"></ion-input>
                         </ion-item>
                         <br>
