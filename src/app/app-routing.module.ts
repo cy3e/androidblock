@@ -30,6 +30,10 @@ const routes: Routes = [
     path: 'token',
     loadChildren: () => import('./token/token.module').then( m => m.TokenPageModule)
   },
+  {
+    path: 'androidview',
+    loadChildren: () => import('./androidview/androidview.module').then( m => m.AndroidviewPageModule)
+  },
 
 ];
 

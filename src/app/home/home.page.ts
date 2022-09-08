@@ -21,17 +21,35 @@ export class HomePage {
     await alert.present();
   }
 
+  enter(){
+    const input = document.getElementById('codigomaestro') as HTMLInputElement | null;
+    const code = input?.value;
+    var cod = code.split(" ").join("");
+
+    if (cod == '1234') {
+      this.router.navigate(['main'])
+      input.value = null;
+    }
+    else {
+      this.err()
+      input.value = null;
+    }
+  }
+
   onKeydown(event) {
       if(event.key === "Enter")
       {
         const input = document.getElementById('codigomaestro') as HTMLInputElement | null;
         const code = input?.value;
+        var cod = code.split(" ").join("");
 
-        if (code == '1234') {
+        if (cod == '1234') {
           this.router.navigate(['main'])
+          input.value = null;
         }
         else {
           this.err()
+          input.value = null;
         }
       }
     }
